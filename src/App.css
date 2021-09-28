@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+header > h1 {
+  display: flex;
+  justify-content: center;
+}
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tag {
+  margin: 2px;
+  font-size: x-small;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-see-more {
+  color: white;
+  background-color: black;
+  border: 0;
+  padding: 0.4rem 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.books {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.book-card-info {
+  margin: 0.5rem;
+  border-radius: 8px;
+  display: flex;
+  border: solid gray 1px;
+}
+
+.category-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.category-item {
+  margin: 10px;
+  cursor: pointer;
+}
+.active-category {
+  border-bottom: solid green 2px;
+  font-weight: bold;
+}
+
+footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 1rem 0.5rem;
+}
+.footer-link {
+  margin: 0rem 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+footer p {
+  font-weight: bold;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.links {
+  margin: 0.5rem 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media only screen and (max-width: 764px) {
+  .book-list {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
