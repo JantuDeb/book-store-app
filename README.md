@@ -1,6 +1,6 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+#Do you read books? You would find some good recommendations for all the genre. Made using ReactJS with love
 
 ## Available Scripts
 
