@@ -50,7 +50,7 @@ function App() {
           </div>
           <div className="book-list">
             {
-              books.map(book => <Book title={book.title} author={book.author} descriptions={book.descriptions} category={book.category} path={book.path} />)
+              books.map(book => <Book title={book.title} author={book.author} descriptions={book.descriptions} category={book.category} path={book.path} rating={book.rating} />)
             }
           </div>
         </section>

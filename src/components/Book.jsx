@@ -1,6 +1,6 @@
 import React from "react";
 
-const Book = ({ title, author, descriptions, category, path }) => {
+const Book = ({ title, author, descriptions, category, path, rating }) => {
   return (
     <div className="book-card-info">
       <div className=" book-card-cover-image">
@@ -10,6 +10,7 @@ const Book = ({ title, author, descriptions, category, path }) => {
       </div>
       <div className="book-card-info-title">
         <h1>{title}</h1>
+        <p>{rating}</p>
         <p>{author}</p>
         <p>{category}</p>
         <p>{descriptions}</p>
